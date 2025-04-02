@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>home</title>
+	<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th,td{
+ padding-top: 10px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+tr:nth-child(even) {
+  background-color: #D6EEEE;
+}
+</style>
+</head>
+<body>
+<h2>Table With Border</h2>
+
+<table style="width:100%">
+	<colgroup>
+  <col span="2" style="background-color: #D6EEEE">
+</colgroup>
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th> 
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Moni</td>
+    <td>Minu</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>mim</td>
+    <td>nishat</td>
+    <td>94</td>
+  </tr>
+  <tr>
+    <td>tania</td>
+    <td>samira</td>
+    <td>80</td>
+  </tr>
+</table>
+<table style="width:100%">
+  <tr>
+    <th colspan="2">Name</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>rayham</td>
+    <td>Showrov</td>
+    <td>43</td>
+  </tr>
+  <tr>
+    <td>piku</td>
+    <td>chiku</td>
+    <td>57</td>
+  </tr>
+</table>
+<h2>HTML Forms</h2>
+<form action="/action_page.php" target="_blank" method="post">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="moni"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="mim"><br>
+  <label for="username">Username:</label><br>
+  <input type="text" id="username" name="username"><br>
+  <label >Password:</label><br>
+  <input type="password"  name="pwd"><br><br>
+  <label>pin:</label>
+   <input type="text" id="pin" name="pin" maxlength="4" size="4"><br><br>
+  <br>
+  <input type="submit" value="Submit">
+  <input type="reset" value="Reset">
+  <br>
+  <br>
+  <p>Choose your favorite Web language:</p>
+  <input type="radio" id="html" name="fav_language" value="HTML">
+  <label for="html">HTML</label><br>
+  <input type="radio" id="css" name="fav_language" value="CSS">
+  <label for="css">CSS</label><br>
+  <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+  <label for="javascript">JavaScript</label>
+  <br>
+  <br>
+  <label for="food">Choose a food:</label>
+  <select id="food" name="food">
+    <option value="pizza">pizza</option>
+    <option value="pasta">pasta</option>
+    <option value="chicken">chicken</option>
+    <option value="mutton">mutton</option>
+  </select>
+  <input type="submit">
+  <br>
+  <br>
+  <h2>what i have!!</h2>
+   <input type="checkbox" >I have a bike<br>
+  <input type="checkbox">I have a car<br>
+  <input type="checkbox">I have a boat
+  <br>
+  <br>
+    <label>Select your favorite color:</label>
+  <input type="color"value="#ff0000">
+  <input type="submit" value="Submit">
+  <br>
+  <br>
+   <label for="birthday">Birthday:</label>
+  <input type="date">
+
+ <input type="image" src="new folder\submit.jpg" alt="Submit" width="38" height="20">
+   <br>
+  <br>
+   <textarea name="message" rows="10" cols="30">my name is jannatul ferdous</textarea>
+  <br><br>
+  <input type="submit">
+  <br>
+  <br>
+  <button type="button" onclick="alert('Have a nice day dear')">Click Me!</button>
+</form>
+
+</body>
+</html>
